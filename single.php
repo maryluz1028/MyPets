@@ -71,7 +71,7 @@ get_header();
                 <div class="comments_post w-full bg-grayWhite p-6 rounded-xl">
                         <div class="w-full flex flex-col">
                             <div class="comments_post_list mb-4">
-                                <h3 class="text-2xl font-bold text-maroon">2 Comentarios</h3>
+                                <h3 class="text-2xl font-bold text-maroon"><?= comments_number() ?></h3>
                                 <hr class="my-6 text-gray">
                                 <?php comments_template() ?>
                             </div>
