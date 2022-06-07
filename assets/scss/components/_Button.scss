@@ -1,0 +1,69 @@
+.buttom,#searchsubmit,.comment-form .submit,.everest-forms .evf-submit-container #evf-submit-180 {
+  @apply inline-flex flex-row justify-center items-center py-4 px-7 w-auto h-12 text-white font-bold  text-base text-center leading-none border-none rounded-3xl bg-pink cursor-pointer  transition ease-in duration-300;
+  &__icon {
+    @apply mr-2;
+  }
+  &:hover {
+    @apply bg-yellow;
+  }
+}
+.buttom--search{
+  @apply bg-transparent rounded-none p-4 text-white text-xl;
+  &:hover{
+    @apply bg-transparent text-pink;
+  }
+}
+.hover--bg-maroon{
+  &:hover{
+    @apply bg-maroon;
+  }
+}
+.buttom--hidden{
+  @apply hidden sm:block;
+}
+.buttom--bars{
+  @apply rounded-none text-2xl px-3 h-10 w-10 shadow-md ml-4;
+  @apply lg:hidden;
+  .buttom__icon{
+    @apply mr-0;
+  }
+  &:hover{
+    @apply bg-pink;
+  }
+}
+.buttom--category{
+  @apply bg-paleYellow text-pink rounded-lg;
+  &:hover{
+    @apply bg-paleYellow text-pink;
+  }
+}
+.buttom--w-full{
+  @apply w-full p-0 rounded-lg md:w-auto md:h-auto lg:py-2 lg:px-4;
+  a{
+    @apply w-full h-full py-4 px-7 lg:p-0;
+  }
+}
+.buttom--social{
+  @apply md:w-full;
+  i{
+    @apply pl-8 text-2xl;
+  }
+  a{
+    @apply text-left;
+  }
+}
+.buttom--facebook{
+  @apply bg-blue-500;
+}
+.buttom--instagram{
+  @apply bg-pinkInstagram;
+}
+.buttom--twitter{
+  @apply  bg-blue-400;
+}
+.buttom--absolute{
+  @apply sm:absolute right-0 h-full rounded-[2rem] px-12;
+}
+.buttom--roundl-0,#searchsubmit{
+  @apply  rounded-xl rounded-tl-none rounded-bl-none h-full leading-[1.3rem];
+}

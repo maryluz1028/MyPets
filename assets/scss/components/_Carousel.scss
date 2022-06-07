@@ -1,0 +1,16 @@
+.slick-dots{
+    @apply hidden #{!important};
+}
+.slick-prev{
+    @apply absolute left-0 top-1/2 z-50 leading-[0];
+}
+.slick-next{
+    @apply absolute right-0 top-1/2 leading-[0];
+}
+.slick-list{
+    @apply w-full;
+    @apply h-full #{!important};
+}
+.slick-track{
+    @apply h-full #{!important};
+}

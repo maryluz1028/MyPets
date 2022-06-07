@@ -1,0 +1,81 @@
+.navbar_menu_primary {
+  @apply absolute top-full left-0 right-0 p-4 invisible opacity-0 transition-opacity duration-500 z-20 bg-yellow;
+  @apply lg:static lg:opacity-100 lg:visible;
+  .menu {
+    @apply flex flex-col justify-center;
+    @apply lg:flex-row lg:bg-transparent;
+    >:first-child{
+      @apply border-t-0;
+    }
+  }
+  .menu-item {
+    @apply relative p-4 cursor-pointer;
+    @apply lg:border-none lg:py-2 px-6;
+    .sub-menu {
+      @apply hidden relative left-0 right-0 top-2;
+      @apply lg:absolute lg:inline-block lg:left-0 lg:-right-2/4 lg:top-full lg:rounded-lg lg:shadow-md lg:bg-white lg:invisible lg:opacity-0 lg:transition-opacity lg:duration-500;
+      a{
+        @apply text-maroon;
+      }
+    }
+    a {
+      @apply inline-block w-full text-white text-base font-bold no-underline transition duration-500;
+    }
+    &:hover {
+      @apply bg-pink transition duration-700;
+      @apply lg:bg-transparent;
+    }
+    &:hover .sub-menu{
+      @apply block;
+      @apply lg:visible lg:opacity-100 lg:z-10;
+    }
+    &:hover > a{
+      @apply lg:text-pink;
+
+    }
+  }
+}
+.active-navbar-primary{
+  @apply visible opacity-100 ;
+}
+/*******footer********/
+.navbar_menu_primary_footer{
+  @apply w-full visible opacity-100 static mb-8 bg-transparent;
+  .menu{
+    @apply flex-row flex-wrap bg-transparent;
+  }
+  .menu-item{
+    @apply border-none;
+    .sub-menu{
+      @apply absolute inline-block left-0 top-full rounded-lg shadow-md bg-white invisible opacity-0 transition-opacity duration-500;
+    }
+    a{
+      @apply text-white transition duration-300;
+    }
+    &:hover{
+      @apply bg-transparent;
+    }
+    &:hover .sub-menu{
+      @apply visible opacity-100 z-10;
+    }
+    &:hover > a{
+      @apply text-yellow;
+    }
+  }
+}
+.navbar_menu_redes{
+  @apply w-full mb-8;
+  .menu{
+    @apply flex flex-row justify-center;
+  }
+  .menu-item{
+    @apply flex justify-center items-center mx-2 w-[35px] h-[35px] sm:w-[55px] sm:h-[55px] sm:mx-3 bg-pink rounded-full text-center shadow-lg transition-all duration-300 ease-in cursor-pointer;
+    &:hover{
+      @apply bg-yellow;
+    }
+  }
+  a{
+    @apply text-white text-base sm:text-xl ;
+  }
+
+}

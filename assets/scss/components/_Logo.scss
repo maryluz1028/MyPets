@@ -1,0 +1,6 @@
+.logo{
+    @apply w-14 h-14;
+    &__img{
+        @apply w-full h-full object-cover;
+    }
+}

@@ -1,0 +1,55 @@
+.about-us{
+    figure{
+        @apply lg:mr-12;
+    }
+    p{
+        strong{
+            @apply text-[30px] lg:text-[50px] text-maroon inline-block py-8;
+        }
+    }
+}
+/*---------------*/
+.contact-form{
+    .everest-form{
+        #evf-180-field_fullname-container,#evf-180-field_email-container{
+            @apply md:inline-block md:w-1/2 md:pr-4;
+        }
+        #evf-180-field_subject-container,#evf-180-field_message-container{
+            @apply md:pr-4;
+        }
+        input,textarea{
+            @apply rounded-xl;
+            
+        }
+        input:focus{
+            @apply border-yellow;
+        }
+        textarea:focus{
+            @apply border-yellow;
+        }
+        textarea{
+            @apply resize-none;
+        }
+        .evf-submit-container {
+            @apply p-0;
+            #evf-submit-180{
+                @apply rounded-xl;
+            }
+        }
+        .evf-frontend-grid{
+            @apply p-0;
+        }
+        .evf-field-container .evf-frontend-row .evf-frontend-grid {
+            @apply p-0;
+        }
+    }
+}
+.container-informartion{
+    border-radius: 155px 45px 225px 75px/15px 125px 15px 155px;
+}
+/************/
+.contact-location{
+    iframe{
+        @apply w-full;
+    }
+}

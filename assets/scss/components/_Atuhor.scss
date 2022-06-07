@@ -1,0 +1,6 @@
+.atuhor_photo_post {
+    @apply text-[0px];
+    img{
+        @apply w-full h-full object-cover rounded-full;
+    }
+}

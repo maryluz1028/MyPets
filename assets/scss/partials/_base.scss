@@ -1,0 +1,22 @@
+// Add any custom base CSS can go here
+
+
+// Foundation
+// =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
+html {
+  @apply antialiased text-base text-blackText;
+  text-rendering: optimizeLegibility;
+  font-family: 'Quicksand', sans-serif;
+}
+h1{
+  @apply text-xl sm:text-3xl;
+}
+h2{
+  @apply text-[22px] sm:text-2xl;
+}
+h3{
+  @apply text-lg sm:text-2xl lg:text-[22px]
+}
+h4{
+  @apply text-[17px] sm:text-xl lg:text-base;
+}

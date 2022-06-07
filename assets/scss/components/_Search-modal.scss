@@ -1,0 +1,26 @@
+.modal-search{
+    @apply hidden;
+}
+.activeSearchModal{
+    @apply block z-40;
+}
+.searchform{
+    div{
+        @apply flex flex-row items-center ;
+    }
+}
+
+.form-searchp{
+    form{
+        div{
+            #s{
+                @apply min-w-0 w-full lg:w-[230px] rounded-xl mr-2  border-solid border-[1px] border-gray bg-white;
+            }
+            #searchsubmit{
+                @apply rounded-xl;
+            }
+        
+        }
+    }
+    
+}

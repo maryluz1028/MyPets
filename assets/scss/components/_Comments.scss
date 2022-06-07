@@ -1,0 +1,82 @@
+.coments_post_form{
+    .comment-respond{
+        .comment-reply-title{
+            @apply text-2xl font-bold text-maroon;
+            small{
+                a{
+                    @apply text-pink;
+                }
+            }
+        }
+        hr{
+            @apply my-6;
+        }
+        .comment-form{
+            p{
+                textarea,input{
+                    @apply w-full mb-6  outline-none py-2 px-4 font-semibold;
+                }
+                textarea{
+                    @apply rounded-xl resize-none;
+                }
+                label{
+                    @apply hidden;
+                }
+            }
+            .comment-form-cookies-consent{
+                @apply hidden;
+            }
+            .submit{
+                @apply font-normal;
+            }
+
+        }
+    }
+}
+.comments_post_list {
+    ol{
+        li{
+            @apply my-4 py-4  border-b border-solid border-gray;
+            .children{
+                li{
+                    @apply pt-4 pl-4 pb-4 border-none;
+                }
+            }
+            .comment-body{
+                @apply flex flex-row relative;
+                .comment-author{
+                    @apply flex flex-row;
+                    img{
+                        @apply w-[50px] h-[50px] mr-4 mb-8;
+                    }
+                    cite{
+                        @apply inline-block text-maroon font-bold not-italic;
+                    }
+                    .says{
+                        @apply hidden;
+                    }
+                }
+                .comment-meta{
+                    a{
+                        @apply absolute top-1/3 left-[66px] pt-1 uppercase text-[11px] font-medium;
+                    }
+                    .comment-edit-link{
+                        @apply hidden;
+                    }
+                }
+                p{
+                    @apply absolute bottom-0 left-[66px] capitalize font-medium;
+                }
+                .reply{
+                    @apply absolute right-0 top-0;
+                    a{
+                        @apply p-2 rounded-xl border border-solid bg-white text-[12px] text-maroon border-gray font-bold transition-colors duration-500 ease-out uppercase;
+                        &:hover{
+                            @apply bg-pink text-white border-pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
